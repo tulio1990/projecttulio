@@ -4,11 +4,13 @@
   "description": "Final Project - FrontEnd II",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Tulio Banegas",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "spotify-web-api-node": "^5.0.2"
   }
 }
