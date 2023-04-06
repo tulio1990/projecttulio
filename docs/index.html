@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Tulio Music Store</title>
-</head>
-<body>
-    <h1>Music Store</h1>
-    <div>
-      <form action="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tulio Music Store</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/logo-tulio-store.png" alt="Logo Music Store" />
+     <a href=""><img id="car-shopping" src="/images/car-shopping.png" alt="Car shopping" /></a> 
+    </header>
+    <main>
+      <h1>Tulio Music Store</h1>
+      <div id= "content">
         <div>
-          <input type="hidden" id="hidden_token">
-          <label for="Genre">Genre:</label>
-          <select name="" id="select_genre">
-            <option>Seleccionar categoria</option>
-          </select>
-
-        </div>
-
-        <div>
-          <input type="hidden" id="hidden_token">
-          <label for="Genre">Playlists:</label>
-          <select name="" id="select_playlist">
-            <option>Seleccionar lista de reproduccion</option>
-          </select>
-
-        </div>
-       <div>
-        <button type="submit" id="btn_submit">Search</button>
-       </div>
-
-      </form>
-
-      <div class="row">
-        <div>
-          <div class="song-list">
-
+        <form action="">
+          <div>
+            <input type="hidden" id="hidden_token" />
+            <label for="Genre">Genre:</label>
+            <select name="" id="select_genre">
+              <option>Select Genre</option>
+            </select>
           </div>
-        </div>
-        <div id="song-detail">
 
+          <div>
+            <input type="hidden" id="hidden_token" />
+            <label for="Genre">Playlists:</label>
+            <select name="" id="select_playlist">
+              <option>Select Playlist</option>
+            </select>
+          </div>
+          <div>
+            <button type="button" id="btn_submit">Search</button>
+          </div>
+        </form>
+        
+        <div>
+          <div class="song-list"></div>
         </div>
       </div>
-
-    <!-- </div>
-    <input id="artistName" type="text" placeholder="Nombre del artista">
-    <button onclick="buscarMusica()">Buscar</button>
-    <div id="resultados"></div> -->
+        <div class="row">
+          <div id="song-detail">
+          </div>
+          <div>
+            <button id="btn_add">Add</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>Tulio Banegas - FrontEnd II</p>
+        <p>Tulio Music Store 2023</p>
+    </footer>
     <script src="/js/app.js"></script>
-</body>
+  </body>
 </html>
